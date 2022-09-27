@@ -1,8 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package conversiondetipo;
+
+import java.util.Scanner;
 
 /**
  *
@@ -10,11 +9,20 @@ package conversiondetipo;
  */
 public class ConversionDeTipo {
 
-    /**
-     * @param args the command line arguments
-     */
+    static Scanner teclado = new Scanner(System.in);
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.print("Dame un número: ");
+        String txt = teclado.nextLine();
+        
+        System.out.println("El numero se guardo como una cadena de texto: '" + txt + "'");
+        System.out.print("Ahora se transforma la cadena a un int.\nPulse ENTER para continuar...");
+        teclado.nextLine();
+        
+        int num = Integer.parseInt(txt);
+        System.out.print("\nLa cadena ahora es un int \nPara comprobar dame otro numero para sumar ambos: ");
+        int num2 = teclado.nextInt();
+        System.out.println("La suma entre " + num + " y " + num2 + " es igual a " + (num+num2));
     }
     
 }
