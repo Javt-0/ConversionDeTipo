@@ -22,7 +22,7 @@ public class ConversionDeTipo {
         int num = Integer.parseInt(txt);
         System.out.print("\nLa cadena ahora es un int \nPara comprobar dame otro numero para sumar ambos: ");
         int num2 = teclado.nextInt();
-        System.out.println("La suma entre " + num + " y " + num2 + " es igual a " + (num+num2));
+        System.out.println("La suma entre " + num + " y " + num2 + " es igual a " + (num+num2)); 
     }
     
 }
